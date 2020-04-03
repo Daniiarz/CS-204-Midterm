@@ -1,0 +1,17 @@
+DROP SCHEMA IF EXISTS 'customer_list' ;
+CREATE SCHEMA IF NOT EXISTS 'customer_list' DEFAULT CHARACTER SET latin1 ;
+USE 'customer_list' ;
+
+CREATE TABLE IF NOT EXISTS `northwind`.`customers` (
+  'id' INT(11) NOT NULL AUTO_INCREMENT,
+  'last_name' VARCHAR(100) NULL DEFAULT NULL,
+  'first_name' VARCHAR(100) NULL DEFAULT NULL,
+  'email_address' VARCHAR(100) NULL DEFAULT NULL,
+  'job_title' VARCHAR(100) NULL DEFAULT NULL,
+  'mobile_phone' VARCHAR(100) NULL DEFAULT NULL,
+  'city' VARCHAR (150) NULL DEFAULT NULL,
+  'web_page' VARCHAR (250) NULL DEFAULT NULL ,
+
+  PRIMARY KEY (`id`),
+ENGINE = postgresql
+DEFAULT CHARACTER SET = utf8;
